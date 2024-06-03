@@ -17,7 +17,7 @@ export default function Component() {
         <div>
             <input type='text' value={text} onChange={textOnChange}/>
             <button onClick={ButtonOnClick}>Actualizar</button>
-            <p>texto input: {text}</p>
+            <p>texto entrada: {text}</p>
             <p>texto actualizado: {updated}</p>
         </div>
     )

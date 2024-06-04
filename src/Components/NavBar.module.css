@@ -1,0 +1,110 @@
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.navOpen {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: blueviolet;
+    flex-direction: column;
+    position: absolute;
+}
+
+.navLink {
+    display: flex;
+    font-size: 2em;
+    font-weight: 400;
+    color: #f1f1f1;
+    padding-top: 10px;
+}
+
+.navLink:hover{
+    cursor: pointer;
+}
+
+.border {
+    display: flex;
+    height: 1px;
+    animation-name: animacionborder;
+    animation-duration: 1s;
+    background-color: black;
+}
+
+@keyframes animacionborder {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 1px;
+    }
+} 
+
+.logo {
+    display: flex;
+    color: #f1f1f1;
+    font-weight: 600;
+}
+
+.contactLink{
+    display: flex;
+    font-size: 2em;
+    font-weight: 300;
+    color: #f1f1f1;
+    padding-top: 10px;
+}
+
+@media (min-width: 900px) {
+    .logo{
+        font-size: 1.5em;
+    }
+
+    .navBar{
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50px;
+    }
+    .linksContainer {
+        display: flex;
+        width: 60%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navLink{
+        padding-top: 3px;
+        font-size: 1.4em;
+        transition: 0.5s;
+    }
+
+    .navLink:hover{
+        font-size: 1.5em;
+    }
+
+    .navOnScroll{
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50px;
+        background-color: blue;
+    }
+
+    .contactLink{
+        display: flex;
+        font-size: 1.4em;
+        color: #f1f1f1;
+        padding-top: 3px;
+    }
+}
+
+.navOnScroll{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blue;
+}
+
